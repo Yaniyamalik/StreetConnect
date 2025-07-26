@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bookingController = require('../controllers/bookingController');
-const { protect } = require('../middleware/auth');
+const protect = require('../middleware/authMiddleware');
 
 // Create a new booking
 router.post('/', protect, bookingController.createBooking);

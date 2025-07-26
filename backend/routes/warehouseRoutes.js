@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const warehouseController = require('../controllers/warehouseController');
-const { protect } = require('../middleware/authMiddleware');
+const protect = require('../middleware/authMiddleware');
 
 // Get all warehouses
 router.get('/', warehouseController.getWarehouses);
