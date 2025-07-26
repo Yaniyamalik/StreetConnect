@@ -1,6 +1,12 @@
 
-const Warehouse = require('./Warehouse');
+//const Warehouse = require('../models/Warehouse');
+let Warehouse;
+let Capsule; // Ensure this is declared
+let Review;  // Ensure this is declared
 
+exports.setMockWarehouse = (mockWarehouse) => { Warehouse = mockWarehouse; };
+exports.setMockCapsule = (mockCapsule) => { Capsule = mockCapsule; }; // <--- THIS LINE IS CRUCIAL
+exports.setMockReview = (mockReview) => { Review = mockReview; };
 // Get all warehouses with filtering, pagination
 exports.getWarehouses = async (req, res) => {
   try {

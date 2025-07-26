@@ -1,6 +1,9 @@
 
-const Product = require('../models/Product');
+//const Product = require('../models/Product');
+let Product; // Declare Product variable
 
+// Method to inject mock model
+exports.setMockProduct = (mockProduct) => { Product = mockProduct; };
 // Get all products with filtering, pagination
 exports.getProducts = async (req, res) => {
   try {
