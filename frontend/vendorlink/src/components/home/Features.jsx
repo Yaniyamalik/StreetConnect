@@ -25,8 +25,8 @@ const Features = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Maria's Taco Stand",
-      location: "Mexico City",
+      name: "China's Momo Stand",
+      location: "Delhi",
       quote: "StreetConnect helped me find reliable suppliers for my ingredients. My costs are down 20% and quality is better than ever!",
       initial: "M",
       bgColor: "#ffddd2",

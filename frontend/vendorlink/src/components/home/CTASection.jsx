@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
 import Button from '../common/Button';
 
 const CTASection = () => {
+  const navigate = useNavigate(); // ✅ Initialize navigation
+
   return (
     <section className="bg-[#e8630a] text-white py-16">
       <div className="container mx-auto px-6 md:px-12 text-center">
@@ -12,13 +15,13 @@ const CTASection = () => {
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button 
             variant="white" 
-            onClick={() => console.log('Get Started')}
+            onClick={() => navigate('/marketplace')} // ✅ Navigate to Marketplace
           >
             Get Started Now
           </Button>
           <Button 
             variant="outline" 
-            onClick={() => console.log('Watch Demo')}
+            onClick={() => navigate('/warehouse-locator')} // ✅ Navigate to Warehouse
           >
             Watch Demo
           </Button>

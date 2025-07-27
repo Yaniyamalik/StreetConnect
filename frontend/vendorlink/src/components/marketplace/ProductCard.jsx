@@ -29,7 +29,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         </div>
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-lg font-bold text-[#e8630a]">${price.toFixed(2)}</span>
+            <span className="text-lg font-bold text-[#e8630a]">₹{price.toFixed(2)}</span>
             <span className="text-sm text-gray-500 ml-1">/ {unit}</span>
           </div>
           <button 

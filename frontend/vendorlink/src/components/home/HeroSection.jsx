@@ -1,11 +1,19 @@
 import React from 'react';
 import Button from '../common/Button';
 import VendorIllustration from '../../assets/svg/VendorIIlustration';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
-  const handlemarketplaceClick = () => {
-    <Link to= "/marketplace"></Link>
-  }
+  const navigate = useNavigate();
+
+  const handleMarketplaceClick = () => {
+    navigate('/marketplace'); // Navigate to Marketplace page
+  };
+
+  const handleWarehouseClick = () => {
+    navigate('/warehouse-locator'); // Navigate to Warehouse page
+  };
+
   return (
     <section className="hero-pattern py-16 md:py-24">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
@@ -21,13 +29,13 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
               variant="primary" 
-             onClick={handlemarketplaceClick}
+              onClick={handleMarketplaceClick}
             >
               Explore Marketplace
             </Button>
             <Button 
               variant="secondary" 
-              onClick={() => console.log('Find a Warehouse')}
+              onClick={handleWarehouseClick}
             >
               Find a Warehouse
             </Button>
@@ -42,4 +50,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-      
