@@ -89,7 +89,7 @@ const WarehouseCard = ({ warehouse }) => {
         
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-lg font-bold text-[#e8630a]">${pricePerMonth}</span>
+            <span className="text-lg font-bold text-[#e8630a]">₹{pricePerMonth}</span>
             <span className="text-sm text-gray-500">/month</span>
           </div>
           <Link 

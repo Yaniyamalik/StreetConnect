@@ -1,24 +1,21 @@
 import React from 'react';
-import TomatoSVG from '../assets/svgs/TomatoSVG';
-import RiceSVG from '../assets/svgs/RiceSVG';
-// import OilSVG from '../assets/svgs/OilSVG';
-// import OnionSVG from '../assets/svgs/OnionSVG';
-// import ChiliSVG from '../assets/svgs/ChiliSVG';
-// import FlourSVG from '../assets/svgs/FlourSVG';
-// import TurmericSVG from '../assets/svgs/TurmericSVG';
-// import YogurtSVG from '../assets/svgs/YogurtSVG';
+//import BasmatiRice from '../assets/marketplaceImages/basmatiRice.jpg';
+//import ChiliPowder from '../assets/marketplaceImages/chiliPowder.jpg';
+//import CookingOil from '../assets/marketplaceImages/cookingOil.jpg';
+//import FreshOnion from '../assets/marketplaceImages/freshOnion.jpg';
+//import tomato from '../assets/marketplaceImages/tomato.jpg';
 
 export const products = [
   {
     id: 1,
     name: 'Fresh Tomatoes',
     description: 'Premium quality tomatoes, perfect for sauces and salads.',
-    price: 2.49,
+    price: 28,
     unit: 'kg',
     rating: 5,
     location: 'Central Market',
     supplier: 'Green Farms Co.',
-    // image: <TomatoSVG />,
+    image: '/images/tomato.jpg',
     badge: {
       text: 'Daily Deal',
       color: 'primary'
@@ -29,24 +26,24 @@ export const products = [
     id: 2,
     name: 'Basmati Rice',
     description: 'Premium long-grain aromatic rice, perfect for biryanis.',
-    price: 3.99,
+    price: 120,
     unit: 'kg',
     rating: 4,
     location: 'East District',
     supplier: 'Royal Grains Ltd.',
-    // image: <RiceSVG />,
+    image: '/images/basmatiRice.jpg',
     category: 'grains'
   },
   {
-   id: 3,
+    id: 3,
     name: 'Cooking Oil',
     description: 'Pure sunflower oil, cholesterol-free and rich in vitamin E.',
-    price: 4.50,
+    price: 150,
     unit: 'liter',
     rating: 5,
     location: 'South District',
     supplier: 'Golden Oils Inc.',
-    // image: <OilSVG />,
+    //image: CookingOil,
     badge: {
       text: 'Best Seller',
       color: 'secondary'
@@ -57,24 +54,24 @@ export const products = [
     id: 4,
     name: 'Fresh Onions',
     description: 'Medium-sized red onions, perfect for everyday cooking.',
-    price: 1.25,
+    price: 25,
     unit: 'kg',
     rating: 3,
     location: 'West District',
     supplier: 'Fresh Harvest Co.',
-    // image: <OnionSVG />,
+   // image: FreshOnion,
     category: 'vegetables'
   },
   {
     id: 5,
     name: 'Chili Powder',
     description: 'Premium quality chili powder, perfect heat level for all dishes.',
-    price: 2.99,
+    price: 45,
     unit: '100g',
     rating: 5,
     location: 'North District',
     supplier: 'Spice World Inc.',
-    // image: <ChiliSVG />,
+    //image: ChiliPowder,
     badge: {
       text: 'Daily Deal',
       color: 'primary'
@@ -85,24 +82,24 @@ export const products = [
     id: 6,
     name: 'Wheat Flour',
     description: 'All-purpose wheat flour, perfect for breads, rotis and other baked goods.',
-    price: 1.75,
+    price: 35,
     unit: 'kg',
     rating: 4,
     location: 'Central Market',
     supplier: 'Harvest Mills Ltd.',
-    // image: <FlourSVG />,
+    image: '', // Add image when available
     category: 'grains'
   },
   {
     id: 7,
     name: 'Turmeric Powder',
     description: 'Organic turmeric powder with high curcumin content, freshly ground.',
-    price: 3.50,
+    price: 60,
     unit: '100g',
     rating: 5,
     location: 'South District',
     supplier: 'Organic Spice Co.',
-    // image: <TurmericSVG />,
+    image: '', // Add image when available
     badge: {
       text: 'Best Seller',
       color: 'secondary'
@@ -113,12 +110,12 @@ export const products = [
     id: 8,
     name: 'Yogurt',
     description: 'Fresh plain yogurt, perfect for cooking and marinades.',
-    price: 2.25,
+    price: 30,
     unit: '500g',
     rating: 4,
     location: 'North District',
     supplier: 'Fresh Dairy Farms',
-    // image: <YogurtSVG />,
+    image: '', // Add image when available
     category: 'dairy'
   }
 ];
