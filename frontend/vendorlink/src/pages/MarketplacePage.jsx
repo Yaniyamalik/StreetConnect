@@ -5,7 +5,7 @@ import FilterSection from '../components/marketplace/FilterSection';
 import CartButton from '../components/marketplace/CartButton';
 import Pagination from '../components/marketplace/Pagination';
 import { useCart } from '../context/CartContext';
-import { fetchProducts } from '../services/api';
+import api from '../services/api'; // Import the default 'api' object
 import { products as sampleProducts } from '../data/marketplaceData';
 
 const MarketplacePage = () => {
