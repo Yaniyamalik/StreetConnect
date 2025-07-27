@@ -245,27 +245,27 @@ const CapsuleBookingForm = ({ capsule, warehouseId }) => {
             <div className="space-y-1 text-sm">
               <div className="flex justify-between">
                 <span className="text-gray-600">Base Rate ({priceBreakdown.days} days)</span>
-                <span className="text-gray-800">${priceBreakdown.baseRate.toFixed(2)}</span>
+                <span className="text-gray-800">₹{priceBreakdown.baseRate.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Cold Storage</span>
-                <span className="text-gray-800">${priceBreakdown.coldStorage.toFixed(2)}</span>
+                <span className="text-gray-800">₹{priceBreakdown.coldStorage.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Humidity Control</span>
-                <span className="text-gray-800">${priceBreakdown.humidityControl.toFixed(2)}</span>
+                <span className="text-gray-800">₹{priceBreakdown.humidityControl.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Insurance</span>
-                <span className="text-gray-800">${priceBreakdown.insurance.toFixed(2)}</span>
+                <span className="text-gray-800">₹{priceBreakdown.insurance.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Service Fee</span>
-                <span className="text-gray-800">${priceBreakdown.serviceFee.toFixed(2)}</span>
+                <span className="text-gray-800">₹{priceBreakdown.serviceFee.toFixed(2)}</span>
               </div>
               <div className="border-t border-gray-200 pt-1 mt-1 flex justify-between font-medium">
                 <span>Total</span>
-                <span>${priceBreakdown.total.toFixed(2)}</span>
+                <span>₹{priceBreakdown.total.toFixed(2)}</span>
               </div>
             </div>
           </div>

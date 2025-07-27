@@ -4,7 +4,7 @@ import ProductCard from '../components/marketplace/ProductCard';
 import FilterSection from '../components/marketplace/FilterSection';
 import CartButton from '../components/marketplace/CartButton';
 import Pagination from '../components/marketplace/Pagination';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/Cartcontext';
 import { fetchProducts } from '../services/api';
 import { products as sampleProducts } from '../data/marketplaceData';
 
