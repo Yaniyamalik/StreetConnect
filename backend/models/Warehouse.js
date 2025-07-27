@@ -66,3 +66,6 @@ const warehouseSchema = new mongoose.Schema({
 warehouseSchema.index({ name: 'text', location: 'text', address: 'text' });
 
 module.exports = mongoose.model('Warehouse', warehouseSchema);
+
+
+

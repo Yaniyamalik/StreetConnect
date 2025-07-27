@@ -1,13 +1,7 @@
-//const Booking = require('../models/Booking');
-//const Capsule = require('../models/Capsule');
-//const User = require('../models/User');
-let Booking;
-let Capsule;
-let User;
+const Booking = require('../models/Booking');
+const Capsule = require('../models/Capsule');
+const User = require('../models/User');
 
-exports.setMockBooking = (mockBooking) => { Booking = mockBooking; };
-exports.setMockCapsule = (mockCapsule) => { Capsule = mockCapsule; };
-exports.setMockUser = (mockUser) => { User = mockUser; };
 // Create a new booking
 exports.createBooking = async (req, res) => {
   try {
